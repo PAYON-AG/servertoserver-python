@@ -2,7 +2,7 @@
 
 import urllib, urllib2, json
 
-def initialPayments():
+def initialPayment():
 	url = "https://test.oppwa.com/v1/payments"
 	data = {
 		'authentication.userId' : '8a8294174b7ecb28014b9699220015cc',
@@ -23,5 +23,5 @@ def initialPayments():
 	except urllib2.HTTPError, e:
 		return e.code;
 
-responseData= initialPayments();
+responseData= initialPayment();
 print responseData;
